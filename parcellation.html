@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cortical Surface Parcellation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Andrea's portfolio</a></h1>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Cortical Surface Parcellation</a></h2>
+										<p> From coarse to fine-grained parcellation of the cortical surface using a fiber-bundle atlas</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2020-09-10">September 10, 2020</time>
+										<a href="#" class="author"><span class="name">Andrea Vázquez</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="images/parcellation.jpg" alt="" /></span>
+								<p style="text-align: justify;">We present a hybrid method to create fine-grained parcellations of the cortical surface, 
+									from a coarse-grained parcellation according to an anatomical atlas, based on cortico-cortical connectivity. The connectivity 
+									information is obtained from segmented superficial and deep white matter bundles, according to bundle atlases, instead of the whole tractography.
+									 Thus, a direct matching between the fiber bundles and the cortical regions is obtained, avoiding the problem of finding the correspondence of the 
+									 cortical parcels among subjects. Generating parcels from segmented fiber bundles can provide a good representation of the human brain connectome 
+									 since they are based on bundle atlases that contain the most reproducible short and long connections found on a population of subjects. The method 
+									 first processes the tractography of each subject and extracts the bundles of the atlas, based on a segmentation algorithm. Next, the intersection 
+									 between the fiber bundles and the cortical mesh is calculated, to define the initial and final intersection points of each fiber. A fiber filtering
+									  is then applied to eliminate misclassified fibers, based on the anatomical definition of each bundle and the labels of Desikan-Killiany anatomical
+									   parcellation. A parcellation algorithm is then performed to create a subdivision of the anatomical regions of the cortex, which is reproducible 
+									   across subjects. This step resolves the overlapping of the fiber bundle extremities over the cortical mesh within each anatomical region. For the 
+									   analysis, the density of the connections and the degree of overlapping, is considered and represented with a graph. ></p>
+								<p>This work is published in: 
+								<a href="https://doi.org/10.3389/fninf.2020.00032" style="color:blue"> Frontiers in Neuroinformatics</a>
+								</p>
+								<p>Github code: <a href="https://github.com/andvazva/Parcellation" style="color:blue"> https://github.com/andvazva/Parcellation</a></p>
+								<footer>
+									<ul class="stats">
+										<li><a href="#">Cortical Surface Parcellation</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="mailto: andvazva@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://github.com/andvazva"  class="icon brands fa-github"><span class="label">Email</span></a></li>
+						</ul>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+
+	</body>
+</html>
