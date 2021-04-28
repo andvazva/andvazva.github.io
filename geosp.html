@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Andrea's portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Andrea's portfolio</a></h1>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Clustering: GeoSP</a></h2>
+										<p>GeoSP: Parallel clustering algorithm, based on k-means, which performs geodesic cortical parcellation.</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2020-20-07">July 20, 2020</time>
+										<a href="#" class="author"><span class="name">Andrea Vázquez</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="images/geosp.png" alt="" /></span>
+								<p style="text-align: justify;">We present GeoSP, a parallel method that creates a parcellation of the cortical mesh based on a geodesic distance, in order to consider gyri and sulci topology. The method represents the mesh with a graph and performs a K-means clustering in parallel. It has two modes of use, by default, it performs the geodesic cortical parcellation based on the boundaries of the anatomical parcels provided by the Desikan-Killiany atlas. The other mode performs the complete parcellation of the cortex. Results for both modes and with different values for the total number of sub-parcels show homogeneous sub-parcels. Furthermore, the execution time is 82s for the whole cortex mode and 18s for the Desikan-Killiany atlas subdivision, for a parcellation into 350 sub-parcels. The proposed method will be available to the community to perform the evaluation of data-driven cortical parcellations. As an example, we compared GeoSP parcellation with Desikan-Killiany and Destrieux atlases in 50 subjects, obtaining more homogeneous parcels for GeoSP and minor differences in structural connectivity reproducibility across subjects.</p>
+								<p>This work is published in: 
+								<a href="https://doi.org/10.1109/EMBC44109.2020.9175779" style="color:blue"> 2020 42nd Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)</a>
+								</p>
+								<p>Github code: <a href="https://github.com/andvazva/GeoSP" style="color:blue"> https://github.com/andvazva/GeoSP</a></p>
+								<footer>
+									<ul class="stats">
+										<li><a href="#">CLUSTERING: GEOSP</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="mailto: andvazva@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://github.com/andvazva"  class="icon brands fa-github"><span class="label">Email</span></a></li>
+						</ul>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+
+	</body>
+</html>
